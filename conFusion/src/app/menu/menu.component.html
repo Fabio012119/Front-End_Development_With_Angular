@@ -1,19 +1,15 @@
 <div class="container"
      fxLayout="column"
      fxLayoutGap="10px">
-
      <div fxFlex>
       <div>
         <h3>Menu</h3>
         <hr>
       </div>
      </div>
-
-
-
 <div fxFlex>
-  <mat-grid-list cols="2" rowHeight="200px">
-    <mat-grid-tile *ngFor="let dish of dishes">
+  <mat-grid-list cols="2" rowHeight="200px" >
+    <mat-grid-tile *ngFor="let dish of dishes" (click)="onSelect(dish)" >
       <img height="200px" src={{dish.image}} alt={{dish.name}}>
       <mat-grid-tile-footer>
         <h1 matLine> {{dish.name | uppercase}} </h1>
@@ -22,23 +18,6 @@
     </mat-grid-tile>
   </mat-grid-list>
 </div>
-
-<div fxFlex *ngIf="selectedDish">
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>
-      <h3>{{selectedDish.name | uppercase}}</h3>
-    </mat-card-title>
-  </mat-card-header>
-  <img mat-card-image src={{selectedDish.image}} alt={{selectedDish.name}}>
-  <mat-card-content>
-    <p>{{selectedDish.description}}</p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
-</div>
-
+<div>
+<app-dishdetail [dish]="selectedDish"></app-dishdetail>
 </div>
