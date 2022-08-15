@@ -29,6 +29,5 @@ export class HomeComponent implements OnInit {
     .then(promotion=>this.promotion = promotion);
     this.leaderService.getFeaturedLeader()
     .then(leader =>  this.leader = leader);
-
   }
 }
