@@ -19,7 +19,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSliderModule } from '@angular/material/slider';
 import { HttpClientModule } from '@angular/common/http';
-
+import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 
 import 'hammerjs';
 
@@ -73,12 +73,13 @@ import { baseURL } from './shared/baseurl';
     MatSlideToggleModule,
     MatProgressSpinnerModule,
     MatSliderModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     DishService,
     PromotionService,
     LeaderService,
+    ProcessHTTPMsgService,
     {provide : 'BaseURL',useValue:baseURL }
   ],
   entryComponents:[
