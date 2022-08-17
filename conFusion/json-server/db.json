@@ -186,7 +186,7 @@
       "description": "Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person "
     }
   ],
-  "leadership": [
+  "leaders": [
     {
       "id": "0",
       "name": "Peter Pan",
@@ -224,5 +224,36 @@
       "description": "Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!"
     }
   ],
-  "feedback": []
+  "feedback": [
+    {
+      "firstname": "Fabio",
+      "lastname": "Saraseli",
+      "telnum": "92843592",
+      "email": "fabioosara@gmail.com",
+      "agree": true,
+      "contacttype": "Tel",
+      "message": "Test feedback",
+      "id": 1
+    },
+    {
+      "firstname": "Fabio",
+      "lastname": "Saraseli",
+      "telnum": "9834753",
+      "email": "fabiooosara@gmail.com",
+      "agree": true,
+      "contacttype": "Tel",
+      "message": "test feed 2",
+      "id": 2
+    },
+    {
+      "firstname": "Fabio",
+      "lastname": "Saraseli",
+      "telnum": "90909090",
+      "email": "fabioosara@gmail.com",
+      "agree": true,
+      "contacttype": "Tel",
+      "message": "Test 3",
+      "id": 3
+    }
+  ]
 }

@@ -1,4 +1,3 @@
-import { Dish } from './../shared/dish';
 import { Injectable } from '@angular/core';
 import { Dish } from '../shared/dish';
 import { of,Observable } from 'rxjs';
@@ -18,7 +17,6 @@ export class DishService {
   getDishes(): Observable<Dish[]> {
     return this.http.get<Dish[]>(baseURL + 'dishes' )
     .pipe(catchError(this.ProcessHTTPMsgService.handleError));
-
   }
 
   getDish(id: string): Observable<Dish>{
@@ -29,7 +27,6 @@ export class DishService {
     return this.http.get<Dish>(baseURL + 'dishes?featured=true')
     .pipe(map(dishes=>dishes[0]))
     .pipe(catchError(this.ProcessHTTPMsgService.handleError));
-    ;
   }
 
   getDishIds():Observable<string[] | any> {

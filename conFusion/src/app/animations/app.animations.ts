@@ -2,7 +2,7 @@ import { trigger , state , animate , transition, style } from '@angular/animatio
 
 
 
-export function visibility {
+export function visibility() {
   return trigger('visibility', [
     state('shown', style({
         transform: 'scale(1.0)',
@@ -16,7 +16,7 @@ export function visibility {
 ]);
 }
 
-export function flyInOut {
+export function flyInOut() {
   return trigger('flyInOut', [
     state('*' , style({
         opacity:1,
